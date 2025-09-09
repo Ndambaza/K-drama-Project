@@ -11,7 +11,7 @@ body {
   grid-gap: 64px;
 }
 .img-responsive {
-  max-width: 100%;
+  width: 100%;
 }
 .grid-2-cols {
   grid-template-columns: repeat(2, 1fr);
@@ -22,6 +22,10 @@ body {
 .grid-3-cols-with-first-narrower {
   grid-template-columns: 1fr 2fr 2fr;
 }
+.grid-4-cols {
+  grid-template-columns: repeat(4, 1fr);
+  gap: 20px;
+}
 .text-center {
   text-align: center;
 }
@@ -29,9 +33,7 @@ body {
   background: white;
   margin: 30px 0;
 }
-.card img {
-  width: 100%;
-}
+
 .card-body {
   margin: 30px;
 }
@@ -137,6 +139,10 @@ main p {
   font-size: 16px;
   line-height: 1.5;
   opacity: 0.8;
+}
+section.trailer-section h3 {
+  font-size: 30px;
+  margin-bottom: 50px;
 }
 
 footer {
