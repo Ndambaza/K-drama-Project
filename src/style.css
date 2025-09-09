@@ -1,0 +1,77 @@
+body {
+  font-family: "Poppins", sans-serif;
+  background: #d3cec8;
+}
+.container {
+  max-width: 1400px;
+  margin: 0 auto;
+}
+
+header {
+  background-image: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.6)),
+    url(/images/LRR.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  text-align: center;
+  color: white;
+  padding: 260px 0;
+}
+
+header h1 {
+  font-weight: 700;
+  font-size: 96px;
+  line-height: 1.2;
+  margin: 0;
+}
+
+header h2 {
+  font-weight: 400;
+  font-size: 30px;
+  font-style: italic;
+  line-height: 1.5;
+  margin: 0;
+}
+
+header h3 {
+  font-weight: 500;
+  font-size: 30px;
+  line-height: 1.5;
+  letter-spacing: 5px;
+  margin: 0;
+}
+
+header a {
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 1.5;
+  margin-top: 40px;
+  display: inline-block;
+  text-align: center;
+  padding: 16px 32px;
+  letter-spacing: 3px;
+  text-transform: uppercase;
+  text-decoration: none;
+  background: white;
+}
+
+@media (max-width: 968px) {
+  header {
+    padding: 60px 0;
+  }
+
+  header h1 {
+    font-size: 30px;
+  }
+
+  header h2,
+  header h3 {
+    font-size: 15px;
+  }
+
+  header a {
+    font-size: 9px;
+    padding: 10px 20px;
+    letter-spacing: 2px;
+  }
+}
