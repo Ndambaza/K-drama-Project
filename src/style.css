@@ -8,12 +8,23 @@ body {
 }
 .grid {
   display: grid;
-  grid-template-columns: 1fr 2fr 2fr;
   grid-gap: 64px;
 }
+.img-responsive {
+  max-width: 100%;
+}
+.grid-2-cols {
+  grid-template-columns: repeat(2, 1fr);
+}
+
+.grid-3-cols-with-first-narrower {
+  grid-template-columns: 1fr 2fr 2fr;
+}
+
 section {
   max-width: 1200px;
   margin: 0 auto;
+  padding: 100px 0;
 }
 
 header {
@@ -64,6 +75,34 @@ header a {
   background: white;
 }
 
+main {
+  background-color: white;
+}
+
+main h2 {
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 1.2;
+  letter-spacing: 3px;
+  opacity: 0.6;
+  text-transform: uppercase;
+  margin: 0;
+}
+main h3 {
+  font-weight: 700;
+  font-size: 32px;
+  line-height: 1.5;
+  margin: 0;
+}
+
+main p {
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 1.5;
+  opacity: 0.8;
+}
+
 footer {
   color: white;
   background-image: linear-gradient(rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.8)),
@@ -71,7 +110,6 @@ footer {
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
-  padding: 100px 0;
 }
 
 footer h4 {
@@ -119,5 +157,12 @@ footer a {
     font-size: 9px;
     padding: 10px 20px;
     letter-spacing: 2px;
+  }
+  .grid {
+    grid-template-columns: 1fr;
+    grid-gap: 30px;
+  }
+  section {
+    padding: 30px 0;
   }
 }
