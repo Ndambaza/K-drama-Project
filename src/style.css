@@ -16,15 +16,50 @@ body {
 .grid-2-cols {
   grid-template-columns: repeat(2, 1fr);
 }
-
+.grid-3-cols {
+  grid-template-columns: repeat(3, 1fr);
+}
 .grid-3-cols-with-first-narrower {
   grid-template-columns: 1fr 2fr 2fr;
 }
+.text-center {
+  text-align: center;
+}
+.card {
+  background: white;
+  margin: 30px 0;
+}
+.card img {
+  width: 100%;
+}
+.card-body {
+  margin: 30px;
+}
+
+.card-footer {
+  padding: 0 30px 30px;
+}
+
+.btn {
+  display: block;
+  color: white;
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 1.4;
+  text-align: center;
+  letter-spacing: 3px;
+  text-transform: uppercase;
+  padding: 16px;
+  background-color: #b6cef0;
+  text-decoration: none;
+}
 
 section {
-  max-width: 1200px;
   margin: 0 auto;
   padding: 100px 0;
+}
+section.secondary {
+  background-color: #d3cec8;
 }
 
 header {
@@ -88,6 +123,7 @@ main h2 {
   text-transform: uppercase;
   margin: 0;
 }
+
 main h3 {
   font-weight: 700;
   font-size: 32px;
